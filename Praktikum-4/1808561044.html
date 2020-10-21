@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60">
+    <meta name="description" content="Praktikum 4 Pemrograman Berbasis Web">
+    <meta name="keywords" content="HTML, CSS, Form, Meta">
+    <meta name="author" content="I Made Yoga Mahendra">
+</head>
+
+<body style="background-image:url(img/bg2.jpg);
+			background-size:100%;">
+	<h1 style="text-align:center;">BIODATA DIRI</h1>
+    <form>        
+        <div class="container" style="background-color:white;
+        								width:600px;
+        								padding:2%;
+        								margin:auto;
+        								border-radius:2%;">
+            <div class="row">
+                <label for="nama">NAMA LENGKAP</label><br>
+                <input type="text" placeholder="Masukan Nama Anda">
+            </div>
+
+            <div class="row">
+                <label for="nama">TEMPAT LAHIR</label><br>
+                <input type="text" placeholder="Masukan Tempat Lahir">
+            </div>
+
+            <div class="row">
+                <label for="nama">TANGGAL LAHIR</label><br>
+                <input type="date" placeholder="Masukan Tempat Lahir">
+            </div>
+
+            <div class="row">
+                <label for="gender">JENIS KELAMIN</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki - Laki</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label><br>
+            </div>
+                
+            <div class="row">
+                <label for="edu">PENDIDIKAN TERAKHIR</label><br>
+                <select id="edu" name="edu">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                    <option value="Sarjana">Sarjana</option>
+                </select><br>
+            </div>
+                
+            <div class="row">
+                <label for="edu">PENDIDIKAN SAAT INI</label><br>
+                <select id="edu" name="edu">
+                    <option value="SMA">SMA</option>
+                    <option value="Sarjana">Sarjana</option>
+                    <option value="Magister">Magister</option>
+                    <option value="Doctor">Doctor</option>
+                </select><br>
+            </div>  
+
+            <div class="row">
+                <label for="hp">NOMOR HP</label><br>
+                <input type="number" placeholder="Masukan Nomor HP"><br>
+            </div>
+                
+            <div class="row">
+                <label for="alamat">ALAMAT</label><br>
+                <textarea id="textarea" name="textarea" rows="10" cols="50"></textarea>
+            </div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

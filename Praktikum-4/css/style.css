@@ -1,0 +1,8 @@
+.row {
+    margin-bottom:2%;
+}
+
+input[type=text] {
+        padding: 10px;
+        width: 400px;
+    }
