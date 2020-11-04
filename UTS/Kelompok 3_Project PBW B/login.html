@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Login</title>
-	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-</head>
-<body>
+
+<head>	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Good Choice</title>
 	<style>
+		* {
+			box-sizing: border-box;
+		}
 		body {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	background: #04B4AE;
-}
+			background-color: #04B4AE;
+			font-family: sans-serif;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			margin: 0;
+		}
+		.container {
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+			width: 400px;
+		}
+		h2 {
+			text-align: center;
+		}
+		.form {
+			padding: 30px 40px;
+		}
+		.form-control {
+			margin-bottom: 10px;
+			margin-bottom: 20px;
+			position: relative;
+		}
+		.form-control label {
+			color: #777;
+			display: block;
+			margin-bottom: 5px;
+		}
+		.form-control input {
+			padding: 10px;
+			font-size: 12px;
+			border: 2px solid #f0f0f0;
+			width: 100%;
+		}
+		.form-control input:focus {
+			outline: 0;
+			border-color: #777;
+		}
+		.hh label {
+			color: #777;
+			display: block;
+			margin-bottom: 5px;
+		}
 
-.login-box {
-	width: 300px;
-	padding: 40px;
-	position: absolute;
-	top :50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: #191919;
-	text-align: center;
-}
-.login-box h1 {
-	color: white;
-	text-transform: uppercase;
-	font-weight: 500;
-}
-.login-box input [type = "text"],.box input [type = "password"]{
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 2px solid #3498db;
-	padding: 14px 10px;
-	width: 200px;
-	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25s;
-}
-.login-boxbox input [type = "text"]:focus, .box input [type = "password"]:focus {
-	width: 280px;
-	border-color: #2ecc71;
-}
-
-.login-box input[type = "submit"] {
-	border: 0;
-	background: none;
-	display: block;
-	margin: 20px auto;
-	text-align: center;
-	border: 2px solid #2ecc71;
-	padding: 14px 40px;
-	outline: none;
-	color: white;
-	border-radius: 24px;
-	transition: 0.25s;
-	cursor: pointer;
-}
-.login-box input[type = "submit"]:hover {
-	background: #2ecc71;
-}
-
+		.form-control.success input {
+			border-color: green;
+		}
+		.form-control.error input {
+			border-color: red;
+		}
+		.form button {
+			background-color: #04B4AE;
+			padding: 10px;
+			margin-top: 10px;
+			border: 2px solid #04B4AE;
+			width: 100%;
+			border-radius: 5px;
+			color: white;
+		}
+		.text{
+			text-align: center;
+			margin-top: 10px
+		}
+		
 	</style>
-<form class="login-box" action="index.html">
-	<h1>Login</h1>
-	<input type="text" name="" placeholder="Username">
-	<input type="password" name="" placeholder="Password">
-	<!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
-	<input type="submit" name="" value="Login">
-	<input type="submit" name="" value="Forgot Password">
-</form>
+</head>
+
+<body>
+	<div class="container">
+		<form id="form" class="form" action="index.html">
+			<h2>Login Akun</h2>
+			<div class="form-control">
+				<label for="username">Username</label>
+				<input type="text" id="username" placeholder="Masukkan Username Anda!">
+			</div>
+			<div class="form-control">
+				<label for="password2">Password</label>
+				<input type="text" id="username" placeholder="Masukan Password Anda!">
+			</div>
+
+			<div class="hh">
+			<button >Login</button>
+			<button >Forgot Password</button>
+			</div> 
+			<div class="text">
+				<a href="user-guru.html">guru</a>
+				<a href="user-siswa.html">siswa</a>
+				<a href="admin.html">admin</a>
+			</div>
+		</form>
+	</div>
+	<script type="script.js"></script>
 </body>
 </html>

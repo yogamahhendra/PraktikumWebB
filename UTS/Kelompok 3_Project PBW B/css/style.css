@@ -4,14 +4,17 @@
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
+
 a {
 	color: inherit;
 	text-decoration: none;
 }
-main{
+
+main {
 	overflow: auto;
 }
-footer{
+
+footer {
 	text-align: center;
 	font-weight: bold;
 	background-color: #04B4AE;
@@ -19,47 +22,58 @@ footer{
 	margin-top: 100px;
 	padding: 20px;
 }
+
 .medsos {
 	padding: 5px 0;
 	background-color: #04B4AE;
 }
+
 .medsos ul li {
 	display: inline-block;
 	color: #fff;
 	margin-right: 10px;
 }
-.container  {
-	width: 80% ;
+
+.container {
+	width: 80%;
 	margin: 0 auto;
 }
+
 .container:after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 header h1 {
 	float: left;
 	padding: 15px 0;
 	color: #04B4AE;
 }
+
 header ul {
 	float: right;
 }
+
 header ul li {
 	display: inline-block;
 }
+
 header ul li a {
 	padding: 25px 20px;
 	display: inline-block;
 }
+
 header ul li a:hover {
 	background-color: #04B4AE;
 	color: #fff;
 }
+
 .active {
 	background-color: #04B4AE;
-	color: #fff;	
+	color: #fff;
 }
+
 .back {
 	height: 60vh;
 	background-image: url('../img/hh.jpg');
@@ -69,31 +83,37 @@ header ul li a:hover {
 	justify-content: center;
 	align-items: center;
 }
+
 .back:after {
 	content: '';
 	display: block;
-	position: absolute;;
+	position: absolute;
+	;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,255,255, .2);
+	background-color: rgba(0, 255, 255, .2);
 }
+
 .back h2 {
 	color: #fff;
 	z-index: 1;
 	padding: 20px 25px;
 	border: 3px solid #fff;
 }
+
 section {
 	padding: 50px 0;
 }
+
 section h3 {
 	text-align: center;
 	padding: 20px 0;
 	color: #04B4AE;
 	margin-bottom: 20px;
 }
+
 .about p {
 	color: #666;
 	word-spacing: 2px;
@@ -104,44 +124,50 @@ section h3 {
 /* ---------------------------------------------------------------------------------*/
 /* SEDANA WIJAYA */
 /* CSS LAMAN KELAS */
-.bg-kelas{
+.bg-kelas {
 	background-color: #04B4AE;
 }
-.search-box{
+
+.search-box {
 	margin-bottom: 90px;
 }
-.search-box input{
-  	margin-left: 100px;
-  	padding: 10px;
-  	font-size: 17px;
-  	border: 1px solid grey;
-  	float: left;
-  	width: 70%;
-  	background: #fff;
+
+.search-box input {
+	margin-left: 100px;
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 70%;
+	background: #fff;
 }
+
 .search-box button {
-  	float: left;
-  	margin-left:10px;
-  	width: 15%;
-  	padding: 10px;
-  	background: #f1f1f1;
-  	border-radius: 25px;
-  	color: black;
-  	border: none;
-  	font-size: 17px;
-  	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+	width: 15%;
+	padding: 10px;
+	background: #f1f1f1;
+	border-radius: 25px;
+	color: black;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
 }
+
 .search-box button:hover {
-  	background: #04B4AE;
-  	border: 2px solid #fff;
-  	color: white;
+	background: #04B4AE;
+	border: 2px solid #fff;
+	color: white;
 }
+
 .search-box::after {
-  	content: "";
-  	clear: both;
-  	display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
-.search-box h2{
+
+.search-box h2 {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
@@ -152,69 +178,83 @@ section h3 {
 	border: 3px solid #fff;
 	text-align: center;
 }
-.search-box p{
+
+.search-box p {
 	text-align: center;
 	color: #fff;
 	font-size: 20px;
 	margin-bottom: 70px;
 }
+
 .column {
-	float: left; 
+	float: left;
 	width: 25%;
-  	padding: 20px 30px;
+	padding: 20px 30px;
 }
+
 .card {
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #fff;
 }
+
 .card-container {
-  	text-align: center;
-  	padding: 10px 20px;
+	text-align: center;
+	padding: 10px 20px;
 }
-.card h1,h3{
+
+.card h1,
+h3 {
 	font-family: sans-serif;
 	text-align: center;
 	color: black;
 }
-.card p{
+
+.card p {
 	padding-top: 30px;
 	text-align: right;
 	color: #04B4AE;
 }
-.card img{
+
+.card img {
 	align-items: center;
 	height: 200px;
 	width: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
-.header-kelas{
+
+.header-kelas {
 	padding: 50px;
 	height: 550px;
 }
-.header-kelas img{
+
+.header-kelas img {
 	align-items: center;
 	width: 350px;
 	height: 400px;
 	margin: 25px 25px;
 }
-.header-kelas .card{
+
+.header-kelas .card {
 	float: left;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background-color: #fff;
 	width: 400px;
 	height: 450px;
 }
-.keterangan-kelas{
+
+.keterangan-kelas {
 	margin-left: 400px;
 	padding: 50px 30px;
 }
-.keterangan-kelas p{
+
+.keterangan-kelas p {
 	color: #04B4AE;
 	font-size: 20px;
 	margin-bottom: 30px;
 }
-.judul-kelas{
+
+.judul-kelas {
 	max-width: 500px;
 	width: 500px;
 	margin-bottom: 30px;
@@ -223,7 +263,8 @@ section h3 {
 	border: 3px solid #04B4AE;
 	text-align: center;
 }
-.daftar-kelas{
+
+.daftar-kelas {
 	text-align: center;
 	top: 50%;
 	left: 50%;
@@ -238,65 +279,80 @@ section h3 {
 	border-radius: 100px;
 	background-color: #fff;
 }
-.daftar-kelas:hover{
+
+.daftar-kelas:hover {
 	color: #fff;
 	background-color: #04B4AE;
 }
-#content-kelas{
+
+#content-kelas {
 	float: left;
 	width: 65%;
 }
-#content-kelas .card{
+
+#content-kelas .card {
 	margin-left: 50px;
 	box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-top: 50px;
+	border-radius: 5px;
+	margin-top: 50px;
 }
-.silabus{
+
+.silabus {
 	background-color: #04B4AE;
 	height: 100px;
 	padding: 30px;
 	color: #fff;
 	font-size: 20px;
 }
-.deskripsi-silabus{
+
+.deskripsi-silabus {
 	padding: 30px;
 }
-.deskripsi-silabus p{
+
+.deskripsi-silabus p {
 	text-align: left;
 	color: black;
 }
-#aside{
+
+#aside {
 	float: left;
 	width: 35%;
 }
-#aside .card{
+
+#aside .card {
 	margin-left: 20px;
 	margin-right: 50px;
 	box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-top: 50px;
+	border-radius: 5px;
+	margin-top: 50px;
 }
-#aside header{
+
+#aside header {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 #aside img {
-   	width: 200px;
-   	margin-top: 20px;
+	width: 200px;
+	margin-top: 20px;
 }
-#aside .biodata{
+
+#aside .biodata {
 	padding: 10px 20px;
 }
-#aside .biodata h3{
+
+#aside .biodata h3 {
 	font-size: 18px;
 	margin-bottom: 20px;
 }
-#aside .biodata th,td{
+
+#aside .biodata th,
+td {
 	padding: 10px;
 }
+
 /* CSS LAMAN BUKU */
-#aside-buku{
+#aside-buku {
 	float: left;
 	width: 20%;
 	background-color: #04B4AE;
@@ -306,101 +362,116 @@ section h3 {
 	max-height: 100%;
 	margin-top: 0;
 }
-.buku-checkbox{
+
+.buku-checkbox {
 	padding-top: 20px;
 }
-#aside-buku h2{
+
+#aside-buku h2 {
 	text-align: center;
 	font-weight: 400;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid white;
 }
-#content-buku{
+
+#content-buku {
 	float: left;
 	width: 80%;
 	padding: 20px;
 }
-#content-buku h1{
+
+#content-buku h1 {
 	margin: 50px;
 	text-align: center;
 	color: #04B4AE;
 }
-.buku-search{
+
+.buku-search {
 	margin-bottom: 30px;
 }
-.buku-search input{
-  	margin-left: 100px;
-  	padding: 10px;
-  	font-size: 17px;
-  	border: 1px solid grey;
-  	float: left;
-  	width: 70%;
-  	background: #fff;
+
+.buku-search input {
+	margin-left: 100px;
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 70%;
+	background: #fff;
 }
+
 .buku-search button {
-  	float: left;
-  	margin-left:10px;
-  	width: 15%;
-  	padding: 10px;
-  	background: #f1f1f1;
-  	color: black;
-  	border-radius: 25px;
-  	border: none;
-  	font-size: 17px;
-  	cursor: pointer;
+	float: left;
+	margin-left: 10px;
+	width: 15%;
+	padding: 10px;
+	background: #f1f1f1;
+	color: black;
+	border-radius: 25px;
+	border: none;
+	font-size: 17px;
+	cursor: pointer;
 }
+
 .buku-search button:hover {
-  	background: #04B4AE;
-  	color: white;
+	background: #04B4AE;
+	color: white;
 }
+
 .buku-search::after {
-  	content: "";
-  	clear: both;
-  	display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
-#content-buku .column{
-	float: left; 
+
+#content-buku .column {
+	float: left;
 	width: 33%;
 }
+
 #content-buku .card-container {
-  	text-align: center;
-  	padding: 10px;
+	text-align: center;
+	padding: 10px;
 }
-#content-buku .card img{
+
+#content-buku .card img {
 	align-items: center;
 	height: 300px;
 	width: 250px;
 	margin-left: auto;
 	margin-right: auto;
 }
-#content-buku .card h3{
+
+#content-buku .card h3 {
 	text-align: center;
 	margin: 10px;
 	color: #04B4AE;
 }
 
-#content-buku .card p{
+#content-buku .card p {
 	font-size: 20px;
-	padding: 1px;	
+	padding: 1px;
 	text-align: right;
 	color: black;
 	margin: 20px;
 }
-#content-buku .card-container button{
-    padding: 20px;
-    border: 1px solid #fff;
-    background: #04B4AE;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 40px;
-    width: 150px;
-    cursor: pointer;
-    margin-bottom: 20px;
+
+#content-buku .card-container button {
+	padding: 20px;
+	border: 1px solid #fff;
+	background: #04B4AE;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 40px;
+	width: 150px;
+	cursor: pointer;
+	margin-bottom: 20px;
 }
-.buku-page{
+
+.buku-page {
 	float: right;
 	width: 100%;
 	text-align: center;
@@ -410,19 +481,22 @@ section h3 {
 	font-size: 20px;
 	color: #fff;
 }
-.buku-page a{
+
+.buku-page a {
 	margin-right: 20px;
 	padding: 10px;
 	background-color: #fff;
 	color: black;
 	border-radius: 15px;
 }
-.buku-page a:hover{
+
+.buku-page a:hover {
 	background-color: #04B4AE;
 	border-radius: 15px;
 	color: white;
 }
-.buku-footer{
+
+.buku-footer {
 	border-top: 1px solid #fff;
 	margin-top: 0;
 }

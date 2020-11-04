@@ -4,7 +4,7 @@
 <head>	
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daftar Good Choice</title>
+	<title>Buat Kelas</title>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -77,27 +77,25 @@
 
 <body>
 	<div class="container">
-		<form id="form" class="form" action="index.html">
-			<h2>Buat Akun Baru Anda</h2>
+		<form id="form" class="form" action="user-guru.html">
+			<h2>Buat Kelas Online</h2>
 			<div class="form-control">
-				<label for="username">Username</label>
-				<input type="text" id="username" placeholder="Masukkan Username Anda!">
+				<label for="username">Nama Kelas</label>
+				<input type="text">
 			</div>
 
 			<div class="form-control">
-				<label for="email">Email</label>
-				<input type="text" id="username" placeholder="Masukkan Email Anda!">
+				<label for="alamat">Deskripsi Kelas</label><br>
+                <textarea id="textarea" name="textarea" rows="10" cols="42"></textarea>
 			</div>
 
 			<div class="form-control">
-				<label for="password2">Ulangi Password</label>
-				<input type="text" id="username" placeholder="Konfirmasi Password!">
+				<label for="password2">Jumlah Siswa</label>
+				<input type="number">
 			</div>
 
 			<div class="hh" >
-			<label for="masuk">Masuk Sebagai</label>
-			<button >Pengajar</button>
-    		<button >Siswa</button>
+			<button >Buat Kelas</button>
             </div> 
 		</form>
 	</div>
