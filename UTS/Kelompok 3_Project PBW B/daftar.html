@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Daftar Good Choice</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #04B4AE;
+			font-family: sans-serif;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			margin: 0;
+		}
+		.container {
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+			width: 400px;
+		}
+		h2 {
+			text-align: center;
+		}
+		.form {
+			padding: 30px 40px;
+		}
+		.form-control {
+			margin-bottom: 10px;
+			margin-bottom: 20px;
+			position: relative;
+		}
+		.form-control label {
+			color: #777;
+			display: block;
+			margin-bottom: 5px;
+		}
+		.form-control input {
+			padding: 10px;
+			font-size: 12px;
+			border: 2px solid #f0f0f0;
+			width: 100%;
+		}
+		.form-control input:focus {
+			outline: 0;
+			border-color: #777;
+		}
+		.hh label {
+			color: #777;
+			display: block;
+			margin-bottom: 5px;
+		}
+		.form-control.success input {
+			border-color: green;
+		}
+		.form-control.error input {
+			border-color: red;
+		}
+		.form button {
+			background-color: #04B4AE;
+			padding: 10px;
+			margin-top: 10px;
+			border: 2px solid #04B4AE;
+			width: 100%;
+			border-radius: 5px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form id="form" class="form">
+			<h2>Buat Akun Baru Anda</h2>
+			<div class="form-control">
+				<label for="username">username</label>
+				<input type="text" id="username" placeholder="Masukkan username anda">
+			</div>
+
+			<div class="form-control">
+				<label for="email">Email</label>
+				<input type="text" id="username" placeholder="Masukkan email anda">
+			</div>
+
+			<div class="form-control">
+				<label for="password2">Password</label>
+				<input type="text" id="username" placeholder="Password">
+			</div>
+
+			<div class="form-control">
+				<label for="password2">Ulangi Password</label>
+				<input type="text" id="username" placeholder=" Konfirmasi Password">
+			</div>
+
+			<div class="hh">
+              <label for="masuk">Masuk Sebagai </label><br>
+              <input type="radio" name="masuk_sebagai" value="Pengajar">Pengajar
+              <input type="radio" name="mausuk_sebagai" value="Siswa/Siswi">Siswa/Siswi<br>
+            </div>
+            <button type="submit">Submit</button>
+		</form>
+
+	</div>
+	<script type="script.js"></script>
+
+</body>
+</html>
