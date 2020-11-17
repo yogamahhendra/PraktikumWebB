@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Kalkulator</title>
+    <meta charset="utf-8">
+    <script language="JavaScript" type="text/javascript">
+    function kalkulator() {
+
+        //variable angka satu
+        var angkaSatu = parseInt(document.getElementById("angkaSatu").value);
+
+        //variable angka dua
+        var angkaDua = parseInt(document.getElementById("angkaDua").value);
+
+        //variable operasi aritmatik
+        var op = document.getElementById("op").value;
+
+        //variable angka hasil
+        var hasil = document.getElementById("hasil");
+
+        //variable untuk total angka satu dan angka dua
+        var total;
+        if(op == "^2")
+        {
+            if(angkaDua != null)
+            {
+                total = angkaSatu * angkaSatu;
+                document.getElementById("angkaDua").value="";
+            }
+            else if(isNaN(angkaSatu))
+            {
+                alert('Untuk menggunakan fitur ^2, form pertama harus di isi!')
+            }
+        }
+        else if (isNaN(angkaSatu) || isNaN(angkaDua)) {
+            alert('isi form dengan angka!')
+
+        } else {
+
+            if (op == "+")
+            {
+                total = angkaSatu + angkaDua;
+            }
+            else if (op == "-") 
+            {
+                total = angkaSatu - angkaDua;
+            } 
+            else if (op == "x") 
+            {
+                total = angkaSatu * angkaDua;
+            } 
+            else if (op == "/")
+            {
+                total = angkaSatu / angkaDua;
+            } 
+        }
+
+        hasil.value = total;
+        if(isNaN (hasil.value))
+        {
+            hasil.value=null;
+        }
+    }
+    function hapus(){
+        document.getElementById("angkaSatu").value="";
+        document.getElementById("angkaDua").value="";
+        document.getElementById("hasil").value="";
+    }
+</script>
+</head>
+<style>
+    body{
+        background-color:#21353d;
+    }
+    .kotak{
+        width:500px;
+        height:470px;
+        margin-top:7%;
+        margin-left:30%;
+        background-color:#e0f4ff;
+        border-radius:20px;
+        padding:20px;
+        box-shadow: 0px 0px 15px 15px;
+    }
+</style>
+<body>
+    <div class="kotak">
+        <h2>Kalkulator</h2>
+        <p>Masukkan bilangan pertama</p>
+        <input type="text" id="angkaSatu"><br>
+        <p>Pilih jenis operasi</p>
+        <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+            <option value="^2">^2</option>
+        </select>
+        <p>Masukkan bilangan kedua</p>
+        <input type="text" id="angkaDua">
+        <p>Jumlahkan</p>
+        <input type="submit" onclick="kalkulator()" value="=">
+        <p>Hasilnya : </p>
+        <input type="text" id="hasil"><br><br>
+        <input type="submit" onclick="hapus()" value="hapus">
+    </div>
+</body>
+</html>
